@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Css variables */
 :root {
   --color-light: #F1EEE9;
   --darkgray: #DDDDDD;
@@ -62,6 +63,7 @@ li {
   top: 1.1rem;
 }
 
+
 /* navbar items */
 
 .nav-items {
@@ -83,7 +85,7 @@ li {
 }
 
 /* Mobile Screen Size */
-@media only screen and (min-width: 480px) and (max-width:736px) {
+@media only screen and (min-width: 480px) and (max-width:768px) {
 
   .navbar h2,
   .nav-items li {
@@ -113,6 +115,19 @@ li {
     background-color: #F2EBE9;
   }
 
+}
+
+
+/* Ipad Screen Size */
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+
+  .nav-items li {
+    font-size: 1rem;
+  }
+
+  .nav-items {
+    gap: 0.15rem;
+  }
 }
 
 /* ******************************* start section ******************************* */
@@ -227,15 +242,17 @@ li {
   width: 60%;
 }
 
+#activity p {
+  padding-bottom: 0.5rem;
+}
 
 #activity .left-row2-info {
   margin: 2rem 1.5rem;
 
 }
 
-#activity p {
-  padding-bottom: 0.5rem;
-}
+
+/* right side */
 
 #activity .right-row2 {
   width: 40%;
@@ -584,7 +601,7 @@ footer .footer-link a {
 
 
 /* Mobile Screen Size */
-@media only screen and (min-width: 480px) and (max-width:736px) {
+@media only screen and (min-width: 480px) and (max-width:836px) {
   footer .footer-link a {
     display: none;
   }
